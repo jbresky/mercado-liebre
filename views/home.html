@@ -17,21 +17,25 @@ rel="stylesheet" />
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <div class="container">
-            <nav class="nav-main">
             <img src="images/logo-mercado-liebre.svg">
-            <input type="text" name="search" placeholder="Buscar productos, marcas" class=>
-            <ul class="lupita">
-                <li>
-                  <a href="#">
-                    <i class="fas fa-search"></i>
-                  </a>
-                </li>
-              </ul>
-            <p>Comprá en cuotas y sin tarjeta de crédito</p>
-      
-            <ul class="nav-menu">
+        <div class="nav-search">
+            <input type="text" name="" placeholder="Buscar productos, marcas" class="">
+            <button type="submit" class="nav-search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+          </div>
+            <h2 class="">
+              <i class="fas fa-hand-holding-usd"></i>
+              Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+            </div>
+            <a href="#" class="burger">
+              <i class="fas fa-bars"></i>
+      </a>
+            <nav class="menu-bar">
+            <ul class="left-menu-bar">
                 <li>
                   <a href="#">Ofertas</a>
                 </li>
@@ -45,7 +49,7 @@ rel="stylesheet" />
                   <a href="#">Ayuda</a>
                 </li>
             </ul>
-            <ul>
+            <ul class="right-menu-bar">
                 <li>
                   <a href="#">Crea tu cuenta</a>
                 </li>
@@ -55,14 +59,64 @@ rel="stylesheet" />
                 <li>
                   <a href="#">Mis compras</a>
                 </li>
-            </ul>
-            <ul class="burger">
-                <li>
-                    <i class="fas fa-bars"></i>
-                </li>
-            </ul>
-        </nav>
-    </div>
+          </nav>
     </header>
+
+    <div class="banner"><img src="/images/img-home-banner.jpg" class="banner.img"></div>
+
+    <main class="showcase">
+      <div class="main-products">
+        <h2>Basado en tu última vista</h2>
+        <div>
+          <img src="/images/img-cafetera-moulinex.jpg">
+          <div>
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3 class="price">$ 6.770</h3>
+          <h3 class="disc">40% OFF</h3>
+          <h3>Cafetera Moulinex</h3>
+        </div>
+        <div>
+          <img src="/images/img-macbook-pro-2019.jpg">
+          <div>
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3 class="price">$230.000</h3>
+          <h3 class="disc">20% OFF</h3>
+          <h3>MacBook Pro 2019</h3>
+        </div>
+        <div>
+          <img src="/images/img-samsung-galaxy-s10.jpg">
+          <div>
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3 class="price">$70.500</h3>
+          <h3 class="disc">5% OFF</h3>
+          <h3>Smart TV Samsung</h3>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <nav class="nav-footer">
+        <div class="payment">
+        <i class="fas fa-credit-card"></i>
+        <h4>Pagá con tarjeta o en efectivo</h4>
+        <p>Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div class="envio">
+          <i class="fas fa-gift"></i>
+          <h4>Envío gratis desde $2500</h4>
+          <p>Por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es beneficio de Mercado Puntos</p>
+        </div>
+        <div class="security">
+          <i class="fas fa-user-shield"></i>
+          <h4>Seguridad, de principio a fin</h4>
+          <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estas siempre protegid@</p>
+        </div>
+        <div>
+          <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+        </div>
+      </nav>
+    </footer>
 </body>
 </html>

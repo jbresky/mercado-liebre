@@ -12,19 +12,3 @@ ul {
     list-style: none;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-}
-
-.nav-main {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px
-}
-
-.nav-main ul {
-    display: flex;
-}
