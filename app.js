@@ -3,8 +3,9 @@ const app = express();
 
 const path = require('path');
 
-app.listen(9000, () => {
-    console.log('Servidor corriendo en 9000');
+const port = process.env.PORT || 9000;
+app.listen(port, () => {
+    console.log(`server started on port: ${port}`)
 });
 
 const publicPath = path.resolve(__dirname, './public');
