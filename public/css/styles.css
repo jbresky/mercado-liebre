@@ -10,7 +10,6 @@ body {
 
 header {
     background: #EAC926;
-    margin: auto;
     padding: 10px 10px;
 }
 
@@ -24,85 +23,70 @@ header {
 .text-top-bar h2 {
     font-weight: 400;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .text-top-bar {
-    margin: 10px 30px
+    margin: 10px;
 }
 
 .logo img {
-    width: 250px;
+    width: 150px;
     margin:15px
 }
-
-/* nav {
-    padding: 10px 10px;
-} */
 
 
 nav.main-items {
     display: none;
     list-style: none;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 nav.main-items div {
     display: flex;
 }
 
-ul li {
-    color: black;
-}
-
 nav.main-items a{
     text-decoration: none;
-    font-size: 18px;
-    padding: 0 12px;
+    font-size: 15px;
+    margin: 0 12px;
     color: black
 }
 
 .items-left, .items-right {
-    padding: 0 25px;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;   
+    align-items: center; 
 }
+
 
 header form {
     margin: 10px;
-
+    flex: 1
 }
 
 .search-icon {
     height: 40px;
-    width: 240px;
+    width: 200px;
     display: flex;
-    background-color: white;
     border-radius: 5px;
-    margin: auto;
 }
 
 .search-icon input {
-    height: 100%;
     width: 200px;
     border: none;
-    border-radius: 5px;
-    outline: none;
+    border-radius: 5px 0 0 5px;
     font-size: 14px;
     padding: 5px;
 }
 
-.icon {
-    height: 100%;
+.search-icon .icon {
     width: 40px;
     line-height: 40px;
-    text-align: center;
-    color: black;
     cursor: pointer;
+    background: white;
+    border-radius: 0 5px 5px 0;
+    font-size: 13px;
 }
 
 div.logo {
@@ -129,48 +113,33 @@ div.logo {
     width: 100%;
 }
 
-main {
-    width: 100%;
-    margin: auto;
-}
 
 main {
     background-color: #ebebeb;
+    margin: auto;
 }
 
 .main-products {
     display: column;
-    /* flex-wrap: nowrap;
-    margin: auto;
-    justify-content: space-around;
-    width: 90%; */
     margin: auto;
     width:90%;
-    justify-content: center;
-    padding-bottom: 5px;
 }
 
 .ofertas {
     display: column;
-    /* flex-wrap: nowrap;
     margin: auto;
-    justify-content: space-around;
-    width: 90%; */
-    margin: auto;
-    width:90%;
-    justify-content: center;
+    width: 90%;
     padding-bottom: 30px;
 }
 
 .home-text {
     text-align: center;
-    margin: auto;
 }
 
 .titular {
-    font-size: 24px;
+    font-size: 22px;
     color:rgb(100, 100, 100);
-    padding: 30px;
+    padding: 20px;
 }
 
 .descripcion {
@@ -180,7 +149,7 @@ main {
 
 .card {
     border: 2px solid #ccc;
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding: 15px;
     margin-bottom: 15px;
@@ -232,7 +201,7 @@ footer nav div i:hover {
 }
 
 .price {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .pricedesc {
@@ -244,13 +213,13 @@ footer p {
     font-size: 14px;
 }
 
-.copyright h4 {
+.copyright p {
     font-size: 12px;
+    margin: 10px
 }
 
 .nav-footer {
     text-align: center;
-    justify-content: center;
     display: block;
     margin: 30px 20px 10px;
 } 
@@ -259,38 +228,27 @@ footer p {
     font-size: 22px;
 }
 
+
 .register-form, .login-form {
-    /* margin: auto; */
     display: flex;
     justify-content: center;
-    padding-top: 40px; 
+    padding: 40px;
 }
 
-.form-name, .form-usern, .form-email, .form-birt, .form-address, .form-perfil, .form-intereses, .form-foto, .form-pass, .form-btn-send, .form-btn-reset {
-    padding-top: 10px;
-    margin: 20px 0;
-    width: 300px;
-    justify-content: center;
-    align-items: center;
+.form-all {
+    margin: 25px 0;
 }
-
-.form-birth input {
-    width: 172px;
-}
-
-.form-perfil input{
-    padding: 5px;
-    margin: 5px 7px
-}
-
 
 .register-form input, .login-form input{
     border: none;
     border-radius: 5px;
-    outline: none;
     font-size: 14px;
     padding: 5px 10px;
-    width: 320px;
+    width: 150px;
+}
+
+.form-perfil-input, .form-intereses-input{
+    max-width: 50px
 }
 
 .register-form h3{
@@ -299,58 +257,46 @@ footer p {
     font-weight: bold;
 }
 
-.form-btn-send button {
+.form-btn-send {
     border: none;
     border-radius: 5px;
-    width: 320px;
+    width: 150px;
     background: #3483fa;
     padding: 5px;
     color: #ffffff;
+    margin-top: 15px;
 }
 
-.form-btn-reset button{
+.form-btn-reset{
     border: none;
     border-radius: 5px;
-    width: 320px;
+    width: 150px;
     background: #e96278;
     padding: 5px;
     color: #ffffff;
+    margin-top: 10px;
 }
 
-.form-btn-send button:hover {
+.form-btn-send:hover {
     background: #0022AA;
 }
 
-.form-btn-reset button:hover {
+.form-btn-reset:hover {
     background: #ca4d62;
 }
 
 @media(min-width: 361px){
-    /* .main-header {
-        display: flex;
-        justify-content: space-between;
-    } */
-    .text-top-bar {
-        text-align: right;
-        max-width: 200px;
-    }
-    .burger {
-        display: none;
-    }
-
-    /* .menu-bar {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .menu-bar ul {
-        display: flex;
-        margin: 0 8px
-    }
-    .menu-bar li {
-        margin: 0 10px; */
     .card:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .card {
+        width: 300px
+    }
+    .tablet-show {
+        display: flex;
+    }
+    .tablet-show article {
+        margin: 15px 10px
     }
     .descripcion {
         color: white;
@@ -361,9 +307,21 @@ footer p {
     .descripcion:hover {
         color:black;
 } 
+    .register-form input, .login-form input{
+    width: 320px
+}
+    .form-all button{
+    width: 320px
+}
+    .form-all {
+        width: 300px
+    }
 }
 
-@media(min-width: 760px){
+@media(min-width: 761px){
+    .burger {
+        display: none;
+    }
     .main-products, .ofertas {
         display: flex;
         flex-wrap: nowrap;
@@ -372,6 +330,7 @@ footer p {
     .card {
         display: flex;
         margin-right: 10px;
+        width: 60%
     }
     .nav-footer {
         display: flex;
@@ -386,5 +345,17 @@ footer p {
     nav.main-items {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media(min-width: 1000px){
+    .logo img {
+        width: 250px
+    }
+    .search-icon {
+        width: 300px   
+    }
+    .search-icon input {
+        width: 500px
     }
 }

@@ -69,67 +69,68 @@
 
     <main class="register-form">
         <form action=# method="post">
-            <div class="form-name">
+            <div class="form-all">
                 <label for="name"></label>
                 <input type="text" name="nombre" id="name" placeholder="Nombre y apellido">
             </div>
-            <div class="form-usern">
+            <div class="form-all">
                 <label for="username"></label>
                 <input type="text" name="username" id="username" placeholder="Nombre de usuario">
             </div>
-            <div class="form-email">
+            <div class="form-all">
                 <label for="email"></label>
                 <input type="email" name="E-mail" id="email" placeholder="E-mail">
             </div>
-            <div class="form-birth">
+            <div class="form-all">
                 <h3>Fecha de nacimiento</h3>
                 <label for="birth"></label>
-                <input type="date" name="fecha-nac" id="birth" max="2022/12/31">
+                <input class="form-birth-input" type="date" name="fecha-nac" id="birth" max="2022/12/31">
             </div>
-            <div class="form-address">
+            <div class="form-all">
                 <label for="address"></label>
                 <input type="text" name="domicilio" id="address" placeholder="Domicilio">
             </div>
-            <div class="form-perfil">
+            <div class="form-all">
                 <h3>Perfil de usuario</h3>
-                <input type="radio" name="perfil" value="Comprador">Comprador
-                <input type="radio" name="perfil" value="Vendedor">Vendedor
+                <input class="form-perfil-input" type="radio" name="perfil" value="Comprador">Comprador
+                <!-- <br> -->
+                <input class="form-perfil-input" type="radio" name="perfil" value="Vendedor">Vendedor
             </div>
-            <div class="form-intereses">
+            <div class="form-all">
                 <h3>Intereses</h3>
                 <p>
-                    <input type="checkbox" name="intereses" value="Electro">Electro
+                    <input class="form-intereses-input" type="checkbox" name="intereses" value="Electro">Electro
                 </p>
                 <p>
-                    <input type="checkbox" name="intereses" value="Moda">Moda
+                    <input class="form-intereses-input" type="checkbox" name="intereses" value="Moda">Moda
                 </p>
                 <p>
-                    <input type="checkbox" name="intereses" value="Hogar">Hogar
+                    <input class="form-intereses-input" type="checkbox" name="intereses" value="Hogar">Hogar
                 </p>
                 <p>
-                    <input type="checkbox" name="intereses" value="Jugueteria">Juguetería
+                    <input class="form-intereses-input" type="checkbox" name="intereses" value="Jugueteria">Juguetería
                 </p>
                 <p>
-                    <input type="checkbox" name="intereses" value="Comprador">Vida sana
+                    <input class="form-intereses-input" type="checkbox" name="intereses" value="Comprador">Vida sana
                 </p>
             </div>
-            <div class="form-foto">
-                <label for="user-pic"><strong>Seleccione una foto:</strong></label>
+            <div class="form-all">
+                <label for="user-pic"><h3>Seleccione una foto:</h3></label>
                 <input type="file" name="foto" id="user-pic">
             </div>
-            <div class="form-pass">
+            <div class="form-all">
                 <label for="pass"></label>
                 <input type="password" name="Contraseña" id="pass" placeholder="Contraseña">
             </div>
-            <div class="form-pass">
+            <div class="form-all">
                 <label for="pass-confirm"></label>
                 <input type="password" name="Confirmar" id="pass-confirm" placeholder="Confirmar contraseña">
             </div>
-            <div class="form-btn-send">
-                <a href='/'></a><button type="submit">Enviar</button>
+            <div class="form-all">
+                <a href='/'></a><button class="form-btn-send" type="submit">Enviar</button>
         </div>
-        <div class="form-btn-reset">
-                <button type="reset">Borrar</button>
+        <div class="form-all">
+                <button class="form-btn-reset" type="reset">Borrar</button>
         </div>
 
         </form>
@@ -137,30 +138,30 @@
 
 
     <footer>
-        <nav class="nav-footer">
-          <div class="payment">
-            <i class="fas fa-credit-card"></i>
-            <h4 class="titular">Pagá con tarjeta o en efectivo</h4>
-            <p>Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
-            </p>
-          </div>
-          <div class="envio">
-            <i class="fas fa-gift"></i>
-            <h4 class="titular">Envío gratis desde $2500</h4>
-            <p>Por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es beneficio de Mercado
-              Puntos</p>
-          </div>
-          <div class="security">
-            <i class="fas fa-user-shield"></i>
-            <h4 class=titular>Seguridad, de principio a fin</h4>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estas siempre protegid@
-            </p>
-          </div>
-        </nav>
-          <div class="copyright">
-            <h4 class="titular">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
-          </div>
-      </footer>
+      <nav class="nav-footer">
+        <div class="payment">
+          <i class="fas fa-credit-card"></i>
+          <h4>Pagá con tarjeta o en efectivo</h4>
+          <p>Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+          </p>
+        </div>
+        <div class="envio">
+          <i class="fas fa-gift"></i>
+          <h4>Envío gratis desde $2500</h4>
+          <p>Por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es beneficio de Mercado
+            Puntos</p>
+        </div>
+        <div class="security">
+          <i class="fas fa-user-shield"></i>
+          <h4>Seguridad, de principio a fin</h4>
+          <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estas siempre protegid@
+          </p>
+        </div>
+      </nav>
+      <div class="copyright">
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+      </div>
+    </footer>
 
 </body>
 
