@@ -225,7 +225,7 @@ footer p {
 } 
 
 .nav-footer h4 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
@@ -235,7 +235,7 @@ footer p {
     padding: 40px;
 }
 
-.form-all {
+.register-form div, .login-form div {
     margin: 25px 0;
 }
 
@@ -310,10 +310,10 @@ footer p {
     .register-form input, .login-form input{
     width: 320px
 }
-    .form-all button{
+    .register-form button, .login-form button{
     width: 320px
 }
-    .form-all {
+.register-form div, .login-form div {
         width: 300px
     }
 }
