@@ -78,6 +78,7 @@ header form {
     border-radius: 5px 0 0 5px;
     font-size: 14px;
     padding: 5px;
+    outline: none;
 }
 
 .search-icon .icon {
