@@ -7,7 +7,7 @@ let usersRoutes = require('./routes/users')
 let mainRoutes = require('./routes/main')
 
 //cambiarlo a '/users' y que logre tomarme la ruta
-app.use('/', usersRoutes)
+app.use('/users', usersRoutes)
 app.use('/', mainRoutes)
 
 
