@@ -133,14 +133,12 @@ main {
     padding-bottom: 30px;
 }
 
-.home-text {
-    text-align: center;
-}
 
 .titular {
-    font-size: 22px;
+    font-size: 24px;
     color:rgb(100, 100, 100);
     padding: 20px;
+    margin-left: 50px
 }
 
 .descripcion {
